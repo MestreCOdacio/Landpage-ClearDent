@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    padding: 15px;
+}
+.coluna-direita {
+    width: 50%;
+
+    padding: 15px;
+}
+
+.imagem {
+    max-width: 100%;
+    height: auto;
+}
+#escova {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+}
+button {
+    width: 30px;
+    height: 30px;
+}
