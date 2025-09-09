@@ -1,0 +1,295 @@
+/* ==========================================================================
+
+   1. ESTILOS GERAIS E LAYOUT PRINCIPAL
+
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@700&display=swap');
+
+/* Define estilos base para toda a página */
+
+body {
+
+    font-family: sans-serif;
+
+    line-height: 1.5; /* Melhora a legibilidade dos textos */
+
+    font-family: 'Lato', sans-serif;
+
+    background-color:#bdfcff;
+
+}
+
+
+/* Container principal que divide a página em duas colunas */
+
+main {
+
+    display: flex;
+
+    width: 100%; /* Faz o main tentar ocupar 100% da largura disponível... */
+
+    margin: 0 auto; /* Truque para centralizar um elemento de bloco com largura definida */
+
+   
+
+    padding: 20px;
+
+    gap: 30px;
+
+}
+
+h1 {
+
+    text-align: center;
+
+    font-size: 3rem; /* Aumenta consideravelmente o título principal (ex: 48px) */
+
+    line-height: 1.2; /* Ajusta a altura da linha para títulos grandes */
+
+    margin-bottom: 20px; /* Adiciona um espaço abaixo do título */
+
+}
+
+h3 {
+
+    font-size: 1.5rem; /* Aumenta o título do formulário (ex: 24px) */
+
+}
+
+h1, h3 {
+
+    font-family: 'Playfair Display', serif;
+
+}
+
+
+
+/* Coluna da esquerda, que contém o conteúdo textual */
+
+.coluna-esquerda {
+
+    width: 50%;
+
+    display: flex;
+
+    flex-direction: column; /* Organiza os itens internos em uma pilha vertical */
+
+    gap: 20px; /* Espaço vertical entre os blocos (título, descrição, form) */
+
+    margin-left: 90px;
+}
+.centralizado {
+    width: 100%;
+    max-width: 550px;
+}
+
+
+/* Coluna da direita, que contém a imagem de destaque */
+
+.coluna-direita {
+
+    width: 50%;
+    height: 100vh;
+}
+
+
+/* ==========================================================================
+
+   2. ESTILOS DE COMPONENTES E ELEMENTOS
+
+   ========================================================================== */
+
+
+/* Bloco que agrupa o parágrafo de descrição e a imagem da escova */
+
+.bloco-descricao {
+
+    display: flex;
+
+    margin-top: 100px;
+    margin-right: -80px;
+    align-items: center; /* Alinha o texto e a imagem verticalmente */
+
+    gap: 20px;
+
+}
+
+
+.texto-descricao {
+
+    font-size: 19px;
+
+    text-align: right;
+
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    background-color: #76cbcf;
+
+}
+
+
+/* Estilo geral para as imagens, garantindo que sejam responsivas */
+
+.imagem {
+
+    max-width: 100%;
+
+    display: block; /* Remove pequenos espaços em branco que navegadores às vezes adicionam abaixo de imagens */
+
+}
+
+/* Estilo específico para a imagem da escova, para torná-la circular */
+
+#escova {
+
+    width: 150px;
+
+    height: 150px;
+
+    min-width: 26%;
+
+
+    border: 15px solid #79a3a5;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+
+/* ==========================================================================
+
+   3. ESTILOS DO FORMULÁRIO
+
+   ========================================================================== */
+
+
+form {
+
+    display: flex;
+
+    margin-top: 140px;
+    margin-right: -50px;
+    margin-left: 50px;
+
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+
+}
+
+
+.form-grupo {
+
+    display: flex;
+
+    flex-direction: column; /* Coloca o label acima do input */
+
+    margin-top: -25px;
+
+    gap: 5px; /* Pequeno espaço entre o label e o input */
+
+    text-align: center;
+
+}
+
+
+.form-descricao {
+
+    min-width: 50%;
+
+    margin-right: -60px;
+
+    margin-top:-3px;
+
+    text-align: left;
+
+}
+
+#descricao-desconto {
+
+    margin-top: -50px;
+    color: black;
+
+}
+
+#desconto {
+
+    font-size: 45px;
+
+}
+
+
+input[type="text"] {
+
+    width: 220px;
+
+    height: 30px;
+
+    padding: 8px; /* Espaçamento interno para o texto não colar nas bordas */
+
+    margin-right: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    border-width: 3px;
+
+    border-color:black;
+
+}
+
+
+button {
+
+     width: 70px;
+
+    height: 55px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 40%; /* Deixa o botão redondo para combinar com a imagem */
+
+    cursor: pointer; /* Muda o cursor para uma "mãozinha" ao passar por cima */
+
+    margin-top: 1px;
+
+    background-color: #76cbcf;
+
+    color: #65f1f9;
+
+    font-size: 37px;
+
+    border-color: black;
+
+    border-width: 3px;
+
+    -webkit-text-stroke: 1.8px black;
+
+}
+
+label {
+
+    margin-right: 18px;
+
+}
+
+.padrao-format {
+
+    color: #1d3233;
+
+}
+
+
+.destaque-format {
+
+    color: #1d3233;
+
+} 
+#descricao-formulario {
+    font-size: 30px;
+}
